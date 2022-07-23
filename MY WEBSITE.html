@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>SMART CITY SYSTEM</title>
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pushster&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
+    
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital@1&display=swap" rel="stylesheet">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+
+    <style type="text/css">
+      @import url('https://fonts.googleapis.com/css2?familyfamily=Lato:ital,wght@0,400;1,300&display=swap');
+      body
+  {
+
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  cursor: pointer;
+  scroll-behavior: smooth;
+}
+
+body{
+  width: 100%;
+  height: 100%;
+    background-color:#EAF2F8 ;
+    
+}
+
+
+.logo{
+     font-size: 40px;
+     position: fixed;
+     margin-left: auto;
+     background-color:#DAF7A6;
+     color:rgb(0, 102, 255);
+     width: 100%;
+     font-family: 'Pushster', cursive;
+     padding: 0;
+     z-index: 2;
+
+}
+
+
+.siderbar{
+  font-family: 'Pushster', cursive;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 67px;
+  height: 100%;
+  padding-top: 80px;
+  display: block;
+  color: black;
+  text-decoration: none;
+  font-size: 20px;
+  z-index: 1;
+  background-color: #F4F1F1;
+  text-align: center;
+  cursor: pointer;
+}
+
+.siderbar-menu i{
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px 5px;
+  font-size: 2rem;
+  
+}
+.siderbar-menu i:hover{
+  color: #A74242;
+  border-right:  3px solid #A74242;
+}
+
+.siderbar-menu:hover > a{
+  color: #A74242;
+
+}
+.siderbar-menu  a{
+  text-decoration: none;
+  color: black;
+  font-size: 1rem;
+}
+
+.main{
+  height: 100%;
+  width: 100%;
+  padding-top: 70px;
+  padding-left: 68px;
+}
+
+.img img{
+  width: 100%;
+  height: 300px;
+  position: relative;
+
+}
+
+.welcome{
+  font-family: 'Merriweather', serif;
+  padding-top: 75px;
+  text-align: center;
+  align-items: center;
+  color:black ;  /*#FF5733;*/
+  font-size: 2rem;
+
+}
+
+.box{
+  display: flex;
+  flex-direction: row;
+  height: 400px;
+  width: 100%;
+
+}
+
+.info{
+  align-items: center;
+  text-align: center;
+  padding-left: 80px;
+  padding-top: 10px;
+  margin: 25px;
+
+}
+.title p{
+
+  font-size: 0.9rem;
+}
+
+.info h1{
+  font-size: 2.5rem;
+}
+.info p{
+  margin: 20px;
+  font-size: 1.8rem;
+}
+
+ li{
+  font-size: 1.5rem;
+  
+  
+}
+.img{
+  padding-top: 30px;
+  height: 400px;
+  width: 400px;
+}
+.slideshow-container{
+  padding: 20px;
+  margin: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+#services{
+  margin: 50px;
+  font-size: 2rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+    padding-top: 60px;
+
+}
+
+.box-container{
+  justify-content: center;
+  display: flex;
+  padding-left: 50px;
+  flex-wrap: wrap;
+
+
+}
+
+.box-services{
+  flex:0.5 0.5 20rem ;
+  background-color: white;
+  border-radius: 3px;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  transition: 0.5s;
+  box-shadow: 2px 8px 5px;
+  
+}
+
+.box-services img{
+  padding-top: 10px;
+  height: 300px;
+  width: 300px;
+  border-radius: 10px;
+  
+}
+
+.box-services:hover{
+  color: #0D96FC ;
+  background-color: #FDEEF9;
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.team-container{
+
+  font-size: 2rem;
+  
+  text-align: center;
+  
+}
+
+.team{
+  display: flex;
+  flex-wrap: wrap;
+     padding-left: 65px;
+}
+
+.Our-team{
+  flex: .5 .5 10rem;
+  justify-content: center;
+  text-align: center;
+  background-color: white ;
+  margin: 9px;
+  color: black;
+  border-radius: 10px;
+     transition: 1s;
+}
+
+.Our-team img{
+  width: 150px;
+  height: 150px;
+  border-radius: 120px;
+}
+
+.Our-team:hover{
+  transform: scale(1.06);
+}
+
+.name{
+  margin: 10px;
+  font-size: 1.8rem;
+  color: black;
+  font-weight: bolder;
+}
+
+.desin{
+  margin: 10px;
+  font-size: 1.2rem;
+  font-weight: lighter;
+  color: gray;
+}
+
+/*.desin p:hover{
+  border-bottom: 2px solid yellow;
+
+}*/
+
+.icon i{
+  font-size: 30px;
+  margin: 7px;
+  transition: .7s;
+}
+
+.icon i:hover{
+    transform: translateY(-10px);
+    color: blue;
+}
+
+.link-container{
+  background-color: white;
+  padding-left: 75px;
+  
+}
+
+ .links {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1 1 20rem;
+  margin: 20px;
+}
+
+.link-services {
+  flex: 1 1 20rem;
+  text-decoration: none;
+  color: black;
+}
+
+.link-services a{
+  text-align: center;
+  justify-content: center;
+  text-decoration: none;
+  color: black;
+  font-weight: bolder;
+  font-size: 1.5rem;
+  
+}
+
+.link-services a i{
+     color: red;
+     margin: 10px;
+     padding-top: 10px;
+}
+
+.link-services h2{
+  color: black;
+  padding-top: 10px;
+  font-size: 2.5rem;
+}
+
+.link-services a:hover{
+  color: #fa1d86;
+}
+
+.link-services a:hover i{
+     padding-right: 1rem;
+     
+}
+
+.link-services p{
+  margin: 10px;
+  padding-top: 10px;
+  font-size: 2rem;
+}
+
+.link-services p i{
+  color: blue;
+  font-size: 2.5rem;
+  margin: 10px;
+}
+
+
+.copyright{
+  font-size: 1.9rem;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  border-top:  2px solid red ;
+  margin: 10px;
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+
+
+    </style>
+       
+     
+  
+
+    </head>
+<body>
+	<!--header-->
+  
+    <header class="header">
+    	<a class="logo"><i class="fas fa-smart"></i>AI SMART CITY</a>
+
+      <form action="" class="search-form">
+        <input type="search" placeholder="search here..." id="search-box">
+        <label for="search-box" class="fas fa-search"></label>
+    </form>
+    </header>
+     <!-- siderbar-->
+       <div class="siderbar">
+           
+       	   <div class="siderbar-menu">
+       	   	   <i class="fas fa-bars"></i>
+       	   </div>
+            
+            
+       	   <div class="siderbar-menu">
+
+       	   	<i class="fas fa-home"></i>
+       	   	<a href="#welcome">Home</a>
+       	    </div>
+
+
+       	  
+       	   <div class="siderbar-menu">
+       	   	<i class="fas fa-globe-americas"></i>
+       	   	<a href="#gov policy">Gov Policy</a>
+       	   </div>
+
+       	   <div class="siderbar-menu">
+       	   	<i class="fas fa-concierge-bell"></i>
+       	   	<a href="#services">Service</a>
+       	   </div>
+
+           <div class="siderbar-menu">
+            <i class="fas fa-address-card"></i>
+            <a href="#team-container">Our Team</a>
+           </div>
+
+
+
+       	   <div class="siderbar-menu">
+       	   	<i class="fas fa-link"></i>
+       	   	<a href="#">Contect</a>
+       	   </div>
+           
+
+           </div>
+       	   <!--rightside-->
+
+        
+          <!-- main -->
+
+             <div  id="welcome" class="welcome">
+                <div class="title">
+
+                  <div class="banner">
+
+                    <video width="700px"  autoplay muted loop>
+
+                      <source src="video1.mp4.mp4" type="video/mp4">
+                      <h1> welcome</h1>
+                    </video>
+                    <div class="content">
+                  <h3>Welcome to AI Smart city</h3>
+                  <h4>This is a information about a AI smart city</h4>
+                  </div>
+                </div>
+               </div>
+             
+             <div class="box">
+
+              <div class="info">
+             <h1> Hello User</h1>
+
+           <p><i class="fas fa-arrow-right">  </i> AI in the context of Smart Cities may process personal data (e.g. in delivering and monitoring the use of power in an individual's home, or monitoring the movements of and serving relevant adverts based on geo-location to potential consumers moving around the urban landscape).</p>
+          
+          <ul class="point">
+          <li>Artificial Intelligence (AI) enabling smart urban solutions brings multiple benefits, including more efficient energy, water and waste management, reduced pollution, noise and traffic congestions. </li>
+          <li>A smart city is a city that makes use of information and technologies to enhance the quality and performance of urban services (like energy and transportation), thereby reduces the consumption of resources, prevents wastage, and overall costs.</li>
+          </ul>
+
+       </div>
+           	<!-- image slider-->
+  <div class="slideshow-container">
+           
+
+        <div class="mySlides fade">
+            <div class="numbertext"></div>
+            <img class="img" src="smartcity.jpg" >
+            
+        </div>
+           
+           <div class="mySlides fade">
+            <div class="numbertext"></div>
+            <img class="img" src="smartcity2.jpg" >
+            
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext"></div>
+            <img  class="img" src="smartcity3.jpg" >
+            
+        </div>
+
+
+        <div class="mySlides fade">
+            <div class="numbertext"></div>
+            <img class="img" src="smartcity4.png">"
+            
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext"></div>
+            <img class="img" src="smartcity5.png" >
+            
+        </div>
+        </div>
+        
+
+         </div>
+
+          <!--services-->
+          <div id="services" class="services">
+            <h1>Our <span style="color:red"> Services</span></h1>
+              
+                
+            
+            
+            <div class="box-services">
+              <img src="environment.jpg">
+              <div> <a href="https://nexusintegra.io/smart-city-environments/"><p>Information about environment</p></a></div>
+             </div>
+
+                <div class="box-services">
+                    <img src="Traffic-Management.png">
+                    <div > <a href="https://www.digi.com/blog/post/smart-traffic-management-optimizing-spend"><p>Traffic management</p></a></div>
+                    
+                </div>
+
+                <div class="box-services">
+                    <img src="publicTransportation.jpg">
+                    <div> <a href="https://otonomo.io/blog/smart-cities-intelligent-transportation-systems/"><p>Public transport</p></a></div>
+                    
+                </div>
+
+                <div class="box-services">
+                    <img src="air pollution.jpg">
+                    <div> <a href="https://interestingengineering.com/reducing-air-pollution-in-smart-and-sustainable-future-cities"><p>Control pollution</p></a></div>
+                    
+                </div>
+
+                   <div class="box-services">
+                    <img src="parking.png">
+                    <div> <a href="https://www.smartcityparking.com/"><p>Parking system</p></a></div>
+                   
+                </div>
+
+                <div class="box-services">
+                    <img src="government.png">
+                    <div><a href="https://smartcities.gov.in/"><p>Smart Government</p></a></div>
+
+
+                   </div>
+              </div>
+          </div>
+         
+               <div  id="team-container" class="team-container">
+                <h1>Our<span style="color:red"> Team</span></h1>
+                 <div class="team">
+                    
+                    <div class="Our-team">
+                      <img src="jnpatel01.jpg">
+                      <div class="name">PATEL JAIMIN</div>
+                      <div class="desin">Developer , Designer</div>
+
+                       <div class="icon">
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-youtube"></i>
+                       </div>
+
+                    </div>
+
+                    <div class="Our-team">
+                      <img src="raj.png">
+                      <div class="name">Timbadiya Raj</div>
+                      <div class="desin">Developer  </div>
+                      
+                      <div class="icon">
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-youtube"></i>
+                       </div>
+
+                    </div>
+
+
+                    <div class="Our-team">
+                      <img src="harsh.png">
+                      <div class="name">Patel Harsh</div>
+                      <div class="desin">Developer  </div>
+                      
+                      <div class="icon">
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-youtube"></i>
+                       </div>
+
+                    </div>
+
+                    <div class="Our-team">
+                      <img src="manav.png">
+                      <div class="name">Patel Manav</div>
+                      <div class="desin">Developer  </div>
+                      
+                      <div class="icon">
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-youtube"></i>
+                       </div>
+
+                       
+
+                    </div>
+
+
+                 </div>
+               </div>
+
+                <div class="link-container">
+                  <div class="links">
+
+
+                    <div class="link-services">
+                      <h2>Quick <span style="color:red">Link</span></h2>
+                      <a href="#"> <i class="fas fa-arrow-right"></i> smart-environment</a><br>
+                      <a href=""><i class="fas fa-arrow-right"></i>Smart-parking</a><br>
+                      <a href=""> <i class="fas fa-arrow-right"></i>public-Transportation</a><br>
+                      <a href=""> <i class="fas fa-arrow-right"></i>Traffic-Management</a><br>
+                      <a href=""> <i class="fas fa-arrow-right"></i>advance security</a><br>
+                      <a href=""> <i class="fas fa-arrow-right"></i>Government</a><br>
+                    </div>
+
+                    <div class="link-services">
+                      <h2>Follow<span style="color:red"> Links</span></h2>
+                      <a href=""> <i class="fab fa-facebook-f"></i>Facebook</a><br>
+                       <a href=""> <i class="fab fa-instagram"></i> Instagram</a><br>
+                       <a href=""> <i class="fab fa-twitter"></i> Twitter</a><br>
+                       <a href=""> <i class="fab fa-youtube"></i> Youtube</a><br>
+                    </div>
+
+                    <div class="link-services">
+                      <h2> Our <span style="color:rgb(255, 0, 0)">Address</span></h2>
+                      <p><i class="fas fa-map-marker-alt"></i>apollo institute of engineering & technology, Ahemedabad ,Gujrat, India
+                      </p>
+
+                       <p><i class="fas fa-phone"></i>Phone- Number  : Designer-9876543210</p>
+                         
+                         <p><i class="fas fa-envelope-square"></i>E mail : aismartcity09@gmail.com</p>
+                    </div>
+
+
+                  </div>
+          <div class="copyright">
+                Created By <span style="color:red">AI SMART CITY Info</span>|| All Rights  Reserved!
+          </div>
+
+
+                  
+                </div>
+
+
+    <script src="https://kit.fontawesome.com/7e728baf25.js" crossorigin="anonymous"></script>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <script type="text/javascript">
+    	
+        var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) { slideIndex = 1 }
+     slides[slideIndex - 1].style.display = "block";
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+
+
+
+    </script>
+</body>
+</html>
